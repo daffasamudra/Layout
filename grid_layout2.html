@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Grid Layout 2</title>
+            <style>
+                .grid-container {
+                    display: grid;
+                    grid-gap: 50px;
+                    background-color: #2196F3;
+                    padding: 10px;
+                    grid-template-columns: auto auto;
+                    grid-template-columns: 70px 300px auto 40px;
+                    grid-template-columns: 10px 500px 20px 10px ;
+                }
+                .item1 {
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                    background-color: rgba(255, 255, 255, 0.8);
+                    padding: 20px;
+                }
+                .item {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    border: 1px solid rgba(0, 0, 0, 0.8);
+                    padding: 20px;
+                    font-size: 30px;
+                    text-align: center;
+                }
+            </style>
+    </head>
+
+<body>
+
+<div class="grid-container">
+    <div class="item1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <br>
+    <div>Kesimpulan skenario 1 adalah : Elemen dengan kelas .item1 akan ditempatkan di dalam grid pada kolom mulai dari kolom ke-2 dan berakhir pada kolom ke-5.
+        Latar belakang elemen .item1 akan berwarna putih dengan transparansi 80%.
+        Elemen tersebut akan memiliki padding sebesar 20 piksel di dalamnya.</div>
+        <br>
+    <div>Kesimpulan skenario 2 : Elemen dengan kelas .grid-container akan menggunakan model tata letak grid.
+        Terdapat jarak antara sel-sel dalam grid sebesar 50 piksel.
+        Latar belakang elemen .grid-container akan berwarna biru (#2196F3).
+        Terdapat padding sebesar 10 piksel di dalam elemen .grid-container.
+        Terdapat empat kolom dalam grid dengan lebar yang ditentukan: 10px, 500px, 20px, dan 10px, secara berurutan.
+    </div>
+    
+</div>
+
+</body>
+</html>

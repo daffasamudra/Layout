@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Grid Layout</title>
+    <style>
+        .tempat_grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196f3;
+            padding: 10px;
+            grid-gap: 50px;
+            grid-gap: 50px;
+        }
+
+        .item_grid {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tampilan</h1>
+    <div class="tempat_grid">
+        <div class="item_grid">1</div>
+        <div class="item_grid">2</div>
+        <div class="item_grid">3</div>
+        <div class="item_grid">4</div>
+        <div class="item_grid">5</div>
+        <div class="item_grid">6</div>
+        <div class="item_grid">7</div>
+        <div class="item_grid">8</div>
+        <div class="item_grid">9</div>
+        <div>Elemen-elemen dalam .tempat_grid akan disusun dalam sebuah grid dengan tiga kolom, yang masing-masing memiliki lebar yang sama.
+            Latar belakang kontainer grid akan berwarna biru (#2196f3) dengan padding sebesar 10 piksel di sekelilingnya.
+            Setiap elemen dalam grid akan memiliki latar belakang putih transparan dengan garis batas hitam dan jarak padding sebesar 20 piksel di dalamnya. Ukuran font teks dalam setiap elemen adalah 30 piksel, dan teksnya akan diposisikan di tengah secara horizontal.</div>
+            <div>Skenario 3: Elemen dengan kelas .tempat_grid akan menggunakan model tata letak grid.
+                Latar belakang elemen .tempat_grid akan berwarna biru.
+                Terdapat tiga kolom dalam grid dengan lebar otomatis.
+                Terdapat jarak antara kolom sebesar 100 piksel dan jarak antara baris sebesar 50 piksel.</div>
+                <div>skenario 4: Elemen dengan kelas .tempat_grid akan menggunakan model tata letak grid.
+                    Latar belakang elemen .tempat_grid akan berwarna biru (#2196f3).
+                    Terdapat tiga kolom dalam grid dengan lebar otomatis.
+                    Terdapat jarak antara sel-sel dalam grid sebesar 50 piksel, baik dalam arah baris maupun kolom.</div>
+    </div>
+</body>
+</html>

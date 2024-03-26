@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            /* menjadi flexsibel dengan mengatur property display dengan nilai flex.*/
+            display: flex;
+            background-color: blue;
+            flex-flow: row wrap;
+            justify-content: center;
+            
+
+        }
+
+        .wadah_flex > div {
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            font-size: 30px;
+            border: black solid;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+        <p>Skenario 2:</p>
+        <p>Elemen div di dalam elemen .wadah_flex akan memiliki latar belakang berwarna aqua.</p>
+        <p>Setiap elemen div akan memiliki margin sebesar 10 piksel di sekelilingnya.</p>
+        <p>Setiap elemen div akan memiliki padding sebesar 10 piksel di dalamnya.</p>
+        <p>Teks dalam setiap elemen div akan memiliki ukuran font 30 piksel.</p>
+        <p>Setiap elemen div akan memiliki batas berupa garis hitam dengan jenis garis solid.</p>
+        <p>Skenario 3:</p>
+        <p>Elemen dengan kelas .wadah_flex akan menggunakan model tata letak flexbox.</p>
+        <p>Latar belakang elemen .wadah_flex akan berwarna biru.</p>
+        <p>Elemen-elemen anak di dalam .wadah_flex akan disusun secara vertikal, dari atas ke bawah, karena properti flex-direction diatur menjadi column.</p>
+        <p>Skenario 4:</p>
+        <p>Elemen dengan kelas .wadah_flex akan menggunakan model tata letak flexbox.</p>
+        <p>Latar belakang elemen .wadah_flex akan berwarna biru.</p>
+        <p>ika elemen anak tidak cukup ruang untuk muat dalam satu baris atau kolom, mereka akan melompat ke baris atau kolom baru dalam urutan terbalik dari arah aslinya karena properti flex-wrap diatur menjadi wrap-reverse.</p>
+        <p>Skenario 5:</p>
+        <p>Elemen dengan kelas .wadah_flex akan menggunakan model tata letak flexbox.</p>
+        <p>Latar belakang elemen .wadah_flex akan berwarna biru.</p>
+        <p>flex-flow: row wrap;: Properti ini digunakan untuk menggabungkan properti flex-direction dan flex-wrap. Dalam kasus ini, row menunjukkan bahwa elemen anak akan disusun secara horizontal (sepanjang baris), sedangkan wrap menunjukkan bahwa jika elemen anak tidak cukup ruang untuk muat dalam satu baris, mereka akan melompat ke baris baru.</p>
+        <p>Skenario 6:</p>
+        <p>Elemen dengan kelas .wadah_flex akan menggunakan model tata letak flexbox.</p>
+        <p>Latar belakang elemen .wadah_flex akan berwarna biru.</p>
+        <p>Elemen anak akan disusun secara horizontal (sepanjang baris), dan jika tidak cukup ruang, mereka akan melompat ke baris baru.</p>
+        <p>Anak-anak elemen .wadah_flex akan diposisikan di tengah secara horizontal dalam kontainer karena properti justify-content diatur menjadi center.</p>
+</body>
+</html>
